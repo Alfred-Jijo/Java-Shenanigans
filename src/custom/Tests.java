@@ -1,7 +1,6 @@
 package custom;
 
 import java.util.Scanner;
-import java.util.function.BinaryOperator;
 
 public class Tests {
 	public Tests() {
@@ -52,7 +51,7 @@ public class Tests {
 		System.out.println(decimal);
 		String binaryS;
 		StringBuilder builder = new StringBuilder();
-		int[] bin = NumSys.decToBinArray(decimal, 8);
+		int[] bin = NumSys.decToBinArray(decimal, Integer.SIZE/Byte.SIZE);
 		
 		for (int i : bin) {
 			builder.append(i);

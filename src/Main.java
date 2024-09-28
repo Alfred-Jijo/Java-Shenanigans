@@ -1,5 +1,3 @@
-import custom.LogicGates;
-import custom.NumSys;
 import custom.Tests;
 
 import java.util.Scanner;
