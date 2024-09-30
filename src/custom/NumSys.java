@@ -22,7 +22,8 @@ public class NumSys {
 	
 */
 	public static int bin2Dec(int binary) {
-		int decimal = 0; int n = 0; // casting to different types for testing
+		int decimal = 0;
+		int n = 0; // casting to different types for testing
 		while (binary != 0) {
 			decimal =  (int) (decimal + Math.floor(Math.pow(2, n)) * binary % 10); // math.pow returns double being cast to int
 			binary = binary / 10; //binary is an int --> might not be evaluating correctly
