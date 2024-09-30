@@ -7,7 +7,6 @@ public class NumSys {
 		System.out.println("NumSys operational\nImported java.lang.Math");
 	}
 	
-/*
 	public static int[] decToBinArray(int decimal, int bytes) {
 		int[] binaryArray = new int[(bytes * 8)];
 		int index = 0;
@@ -20,7 +19,7 @@ public class NumSys {
 		return binaryArray;
 	}
 	
-*/
+
 	public static int bin2Dec(int binary) {
 		int decimal = 0;
 		int n = 0; // casting to different types for testing
@@ -32,7 +31,7 @@ public class NumSys {
 		System.out.println(decimal);
 		return decimal;
 	}
-/*
+	
 	public int hex2Bin() {
 		return 0;
 	}
@@ -48,5 +47,5 @@ public class NumSys {
 	public String hex2Dec() {
 		return "";
 	}
-*/
+
 }

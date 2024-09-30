@@ -1,5 +1,7 @@
 package custom;
 
+import custom.Tests.LogicGatesTest;
+
 public class LogicGates {
 	public LogicGates() {
 		System.out.println("Gates constructed");
