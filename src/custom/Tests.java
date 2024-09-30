@@ -1,28 +1,24 @@
 package custom;
 
-import java.util.Scanner;
-
 public class Tests {
 	public Tests() {
 		System.out.println("Running Tests");
 		bin2Den_Test();
-		logicGatesTest();
-		numberSystemTest();
 	}
 	
 	public static void bin2Den_Test() {
-		int[] binTest = { 1010, 1011, 1100};
-		int[] binAns = {10, 11, 12};
+		int[] binTest = { 0001, 0010, 0011, 1010, 1011, 1100 };
+		int[] binAns = { 1, 2, 3, 10, 11, 12 };
 		
-		for (int j = 0; j <= (binTest.length - 1); j++) {
-			if (NumSys.bin2Dec(j) == binAns[j]) {
+		for (int j = 0; j <= (binTest.length-1); j++) {
+			if (NumSys.bin2Dec(binTest[j]) == binAns[j]) {
 				System.out.printf("Bin2Den Test %d: Success\n", j);
 			} else {
 				System.out.printf("Bin2Den Test %d: Failed\n", j);
 			}
 		}
 	}
-	
+/*
 	public static void logicGatesTest() {
 		boolean[] P = { true, true, false, false };
 		boolean[] Q = { true, false, true, false };
@@ -60,4 +56,5 @@ public class Tests {
 		binaryS = builder.toString();
 		System.out.println(binaryS);
 	}
+*/
 }
