@@ -25,3 +25,4 @@ replay_pid*
 
 Playground.iml
 .idea/
+/out/production/Playground/META-INF/Playground.kotlin_module
