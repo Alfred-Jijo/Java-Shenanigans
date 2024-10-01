@@ -11,7 +11,6 @@ public class Main {
 			}
 		}
 		System.out.println("Hello, World!");
-		Lab.Task1();
 		Lab.Task2(reader);
 		reader.close();
 	}
