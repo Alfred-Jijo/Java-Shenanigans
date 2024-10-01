@@ -9,15 +9,19 @@ public class LogicGatesTest {
 		
 		boolean[] andAns = { true, false, false, false };
 		andTest(P, Q, andAns);
+		System.out.println();
 		
 		boolean[] orAns = { true, true, true, false };
 		orTest(P, Q, orAns);
+		System.out.println();
 		
 		boolean[] xorAns = { false, true, true, false };
 		xorTest(P, Q, xorAns);
-		
+		System.out.println();
+
 		boolean[] notAns = { false, false, true, true };
 		notTest(P, Q, notAns);
+		System.out.println();
 	}
 	
 	public static void andTest(boolean[] P, boolean[] Q, boolean[] andAns) {
